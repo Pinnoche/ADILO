@@ -1,0 +1,64 @@
+
+
+/* Reset box sizing to border-box for all elements */
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set body and html to 100% height for full-page layouts */
+html, body {
+  height: 100%;
+  font-family: 'Inter', sans-serif; /* Default Tailwind-like font */
+  background-color: #EFF0F6; /* Default background color */
+  font-size: medium;
+  line-height: 1; /* Improved text readability */
+  text-rendering: optimizeLegibility;
+}
+
+/* Images should be block elements and responsive */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  cursor: default;
+}
+
+/* Set buttons and form elements to inherit font */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Remove bullets and numbers from lists */
+ul, ol {
+  list-style: none;
+}
+
+/* Set anchor tags to inherit text color and remove underline */
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+
+/* Collapse table borders */
+table {
+  border-collapse: collapse;
+}
+
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent horizontal scrollbars */
+body, html {
+  overflow-x: hidden;
+}

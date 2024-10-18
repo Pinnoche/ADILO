@@ -1,0 +1,139 @@
+<script setup lang="ts">
+import { ref } from "vue";
+const isTimeFrame = ref(false);
+const isPeople = ref(false);
+const isTopic = ref(false);
+const handletimeFrame = (e) => {
+  e.stopPropagation();
+  isPeople.value = false;
+  isTopic.value = false;
+  isTimeFrame.value = !isTimeFrame.value;
+};
+
+const handlePeople = (e) => {
+  e.stopPropagation();
+  isTimeFrame.value = false;
+  isTopic.value = false;
+  isPeople.value = !isPeople.value;
+};
+const handleTopic = (e) => {
+  e.stopPropagation();
+  isPeople.value = false;
+  isTimeFrame.value = false;
+  isTopic.value = !isTopic.value;
+};
+</script>
+<template>
+  <div class="dropdown-section">
+    <div class="card">
+      <div class="frame" @click="handletimeFrame">
+        <p>Timeframe: <span>All-time</span></p>
+        <div>
+          <img
+            src="@/assets/images/arrow_down.png"
+            alt="Arrow Down"
+            v-if="!isTimeFrame"
+          />
+          <img
+            src="@/assets/images/arrow_up.png"
+            alt="Arrow Up"
+            v-if="isTimeFrame"
+          />
+        </div>
+      </div>
+      <div class="details" v-if="isTimeFrame">
+        <p>Last Month</p>
+        <p>This Month</p>
+        <p>This Year</p>
+        <p>Custom</p>
+      </div>
+    </div>
+
+    <!-- Sect 2 -->
+    <div class="card">
+      <div class="frame" @click="handlePeople">
+        <p>People: <span>All</span></p>
+        <div>
+          <img
+            src="@/assets/images/arrow_down.png"
+            alt="Arrow Down"
+            v-if="!isPeople"
+          />
+          <img
+            src="@/assets/images/arrow_up.png"
+            alt="Arrow Up"
+            v-if="isPeople"
+          />
+        </div>
+      </div>
+      <div class="details" v-if="isPeople">
+        <p>Last Month</p>
+        <p>This Month</p>
+        <p>This Year</p>
+        <p>Custom</p>
+      </div>
+    </div>
+
+    <!-- Sect 3 -->
+    <div class="card">
+      <div class="frame" @click="handleTopic">
+        <p>Topic: <span>All</span></p>
+        <div>
+          <img
+            src="@/assets/images/arrow_down.png"
+            alt="Arrow Down"
+            v-if="!isTopic"
+          />
+          <img
+            src="@/assets/images/arrow_up.png"
+            alt="Arrow Up"
+            v-if="isTopic"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.dropdown-section {
+  /* width: 75%; */
+  display: flex;
+  justify-content: space-between;
+  /* position: absolute;
+  left: 22%; */
+}
+
+.card {
+  background-color: white;
+  width: 30%;
+  padding: 14px 16px;
+  border-radius: 8px;
+}
+
+.frame {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.frame span {
+  font-weight: bold;
+}
+
+.details {
+  padding: 4px;
+  margin-top: 2px;
+  border-top: 1px solid rgba(145, 144, 144, 0.256);
+}
+
+.details p {
+  padding: 10px 64px 10px 16px;
+}
+.details p:hover {
+  background-color: #1b59f81a;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #1b59f8;
+}
+</style>
