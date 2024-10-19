@@ -3,20 +3,20 @@ import { ref } from "vue";
 const isTimeFrame = ref(false);
 const isPeople = ref(false);
 const isTopic = ref(false);
-const handletimeFrame = (e) => {
+const handletimeFrame = (e: MouseEvent) => {
   e.stopPropagation();
   isPeople.value = false;
   isTopic.value = false;
   isTimeFrame.value = !isTimeFrame.value;
 };
 
-const handlePeople = (e) => {
+const handlePeople = (e: MouseEvent) => {
   e.stopPropagation();
   isTimeFrame.value = false;
   isTopic.value = false;
   isPeople.value = !isPeople.value;
 };
-const handleTopic = (e) => {
+const handleTopic = (e: MouseEvent) => {
   e.stopPropagation();
   isPeople.value = false;
   isTimeFrame.value = false;
@@ -97,18 +97,21 @@ const handleTopic = (e) => {
 
 <style scoped>
 .dropdown-section {
-  /* width: 75%; */
+  background-color: inherit;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  /* position: absolute;
-  left: 22%; */
+  gap: 3%;
+  position: absolute;
 }
 
 .card {
   background-color: white;
-  width: 30%;
+  width: 100%;
+  height: 100%;
   padding: 14px 16px;
-  border-radius: 8px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px #0000000D;
 }
 
 .frame {
@@ -122,13 +125,13 @@ const handleTopic = (e) => {
 }
 
 .details {
-  padding: 4px;
+  padding: 8px;
   margin-top: 2px;
   border-top: 1px solid rgba(145, 144, 144, 0.256);
 }
 
 .details p {
-  padding: 10px 64px 10px 16px;
+  padding: 14px 4rem 14px 1rem;
 }
 .details p:hover {
   background-color: #1b59f81a;

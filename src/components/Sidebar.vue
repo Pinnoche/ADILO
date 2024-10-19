@@ -1,4 +1,5 @@
-<script lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <template>
   <div class="side-bar">
@@ -7,31 +8,41 @@
     </div>
     <div class="menus">
       <ul>
-        <li>
-          <img src="@/assets/images/flash.png" alt="Flash" />
-          Reports
-        </li>
-        <li>
-          <img src="@/assets/images/Library.png" alt="Flash" />
-          Library
-        </li>
+        <RouterLink to="/">
+          <li>
+            <img src="@/assets/images/flash.png" alt="Flash" />
+            Reports
+          </li>
+        </RouterLink>
+        <RouterLink to="/">
+          <li>
+            <img src="@/assets/images/Library.png" alt="Flash" />
+            Library
+          </li>
+        </RouterLink>
         <li>
           <img src="@/assets/images/People.png" alt="Flash" />
           People
         </li>
-        <li>
-          <img src="@/assets/images/Activities.png" alt="Flash" />
-          Activities
-        </li>
+        <RouterLink to="/">
+          <li>
+            <img src="@/assets/images/Activities.png" alt="Flash" />
+            Activities
+          </li>
+        </RouterLink>
         <p id="support">Support</p>
-        <li>
-          <img src="@/assets/images/Bulb.png" alt="Flash" />
-          Get Started
-        </li>
-        <li>
-          <img src="@/assets/images/Settings.png" alt="Flash" />
-          Settings
-        </li>
+        <RouterLink to="/getstarted">
+          <li>
+            <img src="@/assets/images/Bulb.png" alt="Flash" />
+            Get Started
+          </li>
+        </RouterLink>
+        <RouterLink to="/">
+          <li>
+            <img src="@/assets/images/Settings.png" alt="Flash" />
+            Settings
+          </li>
+        </RouterLink>
       </ul>
       <div id="profile">
         <img src="@/assets/images/Profile.png" alt="Profile" />
@@ -77,6 +88,7 @@ li:hover {
   cursor: pointer;
   color: #1b59f8;
 }
+
 #support {
   margin-top: 2.5rem;
   padding: 8px 16px;
@@ -89,32 +101,37 @@ li:hover {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .menus div {
   padding: 2rem 16px 0;
   margin-bottom: 4rem;
-  border-top: gray 1px solid;
+  border-top: 1px solid rgba(145, 144, 144, 0.256);
 }
+
 .menus div h2 {
   font-size: medium;
   margin-bottom: 0.5rem;
 }
+
 .menus div p {
   font-size: small;
 }
+
 #profile {
   cursor: default;
 }
 
 #profile img {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
-#profile p{
+#profile p {
   color: #00000080;
   font-size: small;
 }
 
 /* @media (max-width: 768px) {
+
   .side-bar {
     width: 60%;
   }

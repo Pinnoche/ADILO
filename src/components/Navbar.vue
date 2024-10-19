@@ -1,10 +1,13 @@
-<script lang="ts">
+<script setup lang="ts">
+import { useRoute } from 'vue-router';
+const route = useRoute();
 
+    
 </script>
 
 <template>
     <div class="nav">
-        <h1>Reports</h1>
+        <h1>{{route.name}}</h1>
         <div>
             <img src="@/assets/images/Download.png" alt="Download">
             Download

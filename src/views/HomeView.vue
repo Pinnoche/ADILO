@@ -1,270 +1,279 @@
 <script setup lang="ts">
 import BarChart from "@/components/BarChart.vue";
 import DropDown from "@/components/DropDown.vue";
+import { onMounted } from "vue";
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+
+onMounted(() => {
+  console.log(route.name);
+});
 </script>
 
 <template>
   <div id="main-sect">
     <DropDown />
+    <div id="set-holder">
+      <div class="sect">
+        <div class="users">
+          <div class="user">
+            <div>
+              <p>Active Users</p>
+              <h2>27<span>/80</span></h2>
+            </div>
 
-    <div class="sect">
-      <div class="users">
-        <div class="user">
-          <div>
-            <p>Active Users</p>
-            <h2>27<span>/80</span></h2>
+            <div>
+              <p>Questions Answered</p>
+              <h2>3,298</h2>
+            </div>
+
+            <div>
+              <p>Av. Session Lenght</p>
+              <h2>2m 34s</h2>
+            </div>
           </div>
+          <div class="user-2">
+            <div>
+              <p id="info">
+                Starting Knowledge
+                <img src="@/assets/images/Icon-info.png" alt="Info" />
+              </p>
+              <h2>64%</h2>
+              <img src="@/assets/images/Graph.png" alt="Graph" />
+            </div>
 
-          <div>
-            <p>Questions Answered</p>
-            <h2>3,298</h2>
-          </div>
+            <div>
+              <p>Current Knowledge</p>
+              <h2>86%</h2>
+              <img src="@/assets/images/Graph.png" alt="Graph" />
+            </div>
 
-          <div>
-            <p>Av. Session Lenght</p>
-            <h2>2m 34s</h2>
+            <div>
+              <p>Knowledge Gain</p>
+              <h2>+34%</h2>
+              <img src="@/assets/images/Graph.png" alt="Graph" />
+            </div>
           </div>
         </div>
-        <div class="user-2">
-          <div>
-            <p id="info">
-              Starting Knowledge
-              <img src="@/assets/images/Icon-info.png" alt="Info" />
-            </p>
-            <h2>64%</h2>
-            <img src="@/assets/images/Graph.png" alt="Graph" />
-          </div>
-
-          <div>
-            <p>Current Knowledge</p>
-            <h2>86%</h2>
-            <img src="@/assets/images/Graph.png" alt="Graph" />
-          </div>
-
-          <div>
-            <p>Knowledge Gain</p>
-            <h2>+34%</h2>
-            <img src="@/assets/images/Graph.png" alt="Graph" />
-          </div>
-        </div>
-      </div>
-      <div class="bar">
-        <div id="bar-header">
-          <p>Activity</p>
-          <div id="month">
-            <p>Month</p>
-            <img src="@/assets/images/arrow_down_icon.png" alt="" />
-          </div>
-        </div>
-        <BarChart />
-      </div>
-    </div>
-
-    <div class="sect">
-      <div class="topics">
-        <h3>Weakest Topics</h3>
-        <div>
-          <div class="sub-topics">
-            <div>
-              <img src="@/assets/images/Rectangle_1.png" alt="Rectangle_1" />
-            </div>
-            <div>
-              <h4 class="header">Food Safety</h4>
-              <img src="@/assets/images/Progress_1.png" alt="Progress_1" />
-            </div>
-            <div class="percent">
-              <p>74% <span>Correct</span></p>
+        <div class="bar">
+          <div id="bar-header">
+            <p>Activity</p>
+            <div id="month">
+              <p>Month</p>
+              <img src="@/assets/images/arrow_down_icon.png" alt="" />
             </div>
           </div>
-          <div class="sub-topics">
-            <div>
-              <img src="@/assets/images/Rectangle_2.png" alt="Rectangle_2" />
-            </div>
-            <div>
-              <h4 class="header">Compliance Basics Procedure</h4>
-              <img src="@/assets/images/Progress_2.png" alt="Progress_2" />
-            </div>
-            <div class="percent">
-              <p>52% <span>Correct</span></p>
-            </div>
-          </div>
-          <div class="sub-topics">
-            <div>
-              <img src="@/assets/images/Rectangle_3.png" alt="Rectangle_3" />
-            </div>
-            <div>
-              <h4 class="header">Company Network</h4>
-              <img src="@/assets/images/Progress_3.png" alt="Progress_3" />
-            </div>
-            <div class="percent">
-              <p>36% <span>Correct</span></p>
-            </div>
-          </div>
+          <BarChart />
         </div>
       </div>
 
-      <div class="topics">
-        <h3>Strongest Topics</h3>
-        <div>
-          <div class="sub-topics">
-            <div>
-              <img src="@/assets/images/Rectangle_1.png" alt="Rectangle_1" />
+      <div class="sect">
+        <div class="topics">
+          <h3>Weakest Topics</h3>
+          <div>
+            <div class="sub-topics">
+              <div>
+                <img src="@/assets/images/Rectangle_1.png" alt="Rectangle_1" />
+              </div>
+              <div>
+                <h4 class="header">Food Safety</h4>
+                <img src="@/assets/images/Progress_1.png" alt="Progress_1" />
+              </div>
+              <div class="percent">
+                <p>74% <span>Correct</span></p>
+              </div>
             </div>
-            <div>
-              <h4 class="header">Covid Protocols</h4>
-              <img src="@/assets/images/Progress_4.png" alt="Progress_4" />
+            <div class="sub-topics">
+              <div>
+                <img src="@/assets/images/Rectangle_2.png" alt="Rectangle_2" />
+              </div>
+              <div>
+                <h4 class="header">Compliance Basics Procedure</h4>
+                <img src="@/assets/images/Progress_2.png" alt="Progress_2" />
+              </div>
+              <div class="percent">
+                <p>52% <span>Correct</span></p>
+              </div>
             </div>
-            <div class="percent">
-              <p>94% <span>Correct</span></p>
-            </div>
-          </div>
-          <div class="sub-topics">
-            <div>
-              <img src="@/assets/images/Rectangle_2.png" alt="Rectangle_2" />
-            </div>
-            <div>
-              <h4 class="header">Cyber Security Basics</h4>
-              <img src="@/assets/images/Progress_4.png" alt="Progress_4" />
-            </div>
-            <div class="percent">
-              <p>92% <span>Correct</span></p>
-            </div>
-          </div>
-          <div class="sub-topics">
-            <div>
-              <img src="@/assets/images/Rectangle_3.png" alt="Rectangle_3" />
-            </div>
-            <div>
-              <h4 class="header">Social Media Policies</h4>
-              <img src="@/assets/images/Progress_4.png" alt="Progress_4" />
-            </div>
-            <div class="percent">
-              <p>89% <span>Correct</span></p>
+            <div class="sub-topics">
+              <div>
+                <img src="@/assets/images/Rectangle_3.png" alt="Rectangle_3" />
+              </div>
+              <div>
+                <h4 class="header">Company Network</h4>
+                <img src="@/assets/images/Progress_3.png" alt="Progress_3" />
+              </div>
+              <div class="percent">
+                <p>36% <span>Correct</span></p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="sect">
-      <div class="topics">
-        <h3>User Leaderboard</h3>
-        <div class="user-topics">
-          <div class="leaderboard">
-            <div>
-              <img src="@/assets/images/Thomas.png" alt="Thomas" />
+        <div class="topics">
+          <h3>Strongest Topics</h3>
+          <div>
+            <div class="sub-topics">
+              <div>
+                <img src="@/assets/images/Rectangle_1.png" alt="Rectangle_1" />
+              </div>
+              <div>
+                <h4 class="header">Covid Protocols</h4>
+                <img src="@/assets/images/Progress_4.png" alt="Progress_4" />
+              </div>
+              <div class="percent">
+                <p>94% <span>Correct</span></p>
+              </div>
             </div>
-            <div>
-              <h4 class="header">Jesse Thomas</h4>
-              <span>637 Points - 98% Correct</span>
+            <div class="sub-topics">
+              <div>
+                <img src="@/assets/images/Rectangle_2.png" alt="Rectangle_2" />
+              </div>
+              <div>
+                <h4 class="header">Cyber Security Basics</h4>
+                <img src="@/assets/images/Progress_4.png" alt="Progress_4" />
+              </div>
+              <div class="percent">
+                <p>92% <span>Correct</span></p>
+              </div>
             </div>
-          </div>
-          <div class="direction">
-            <p>1</p>
-            <img src="@/assets/images/up.png" alt="Up" />
-          </div>
-        </div>
-
-        <div class="user-topics">
-          <div class="leaderboard">
-            <div>
-              <img src="@/assets/images/Thisal.png" alt="Thisal" />
+            <div class="sub-topics">
+              <div>
+                <img src="@/assets/images/Rectangle_3.png" alt="Rectangle_3" />
+              </div>
+              <div>
+                <h4 class="header">Social Media Policies</h4>
+                <img src="@/assets/images/Progress_4.png" alt="Progress_4" />
+              </div>
+              <div class="percent">
+                <p>89% <span>Correct</span></p>
+              </div>
             </div>
-            <div>
-              <h4 class="header">Thisal Mathiyazhagan</h4>
-              <span>637 Points - 89% Correct</span>
-            </div>
-          </div>
-          <div class="direction">
-            <p>2</p>
-            <img src="@/assets/images/Down.png" alt="Down" />
-          </div>
-        </div>
-
-        <div class="user-topics">
-          <div class="leaderboard">
-            <div>
-              <img src="@/assets/images/Helen.png" alt="Helen" />
-            </div>
-            <div>
-              <h4 class="header">Helen Chuang</h4>
-              <span>637 Points - 88% Correct</span>
-            </div>
-          </div>
-          <div class="direction">
-            <p>3</p>
-            <img src="@/assets/images/up.png" alt="Up" />
-          </div>
-        </div>
-
-        <div class="user-topics">
-          <div class="leaderboard">
-            <div>
-              <img src="@/assets/images/Lura.png" alt="Lura" />
-            </div>
-            <div>
-              <h4 class="header">Lura Silverman</h4>
-              <span>637 Points - 87% Correct</span>
-            </div>
-          </div>
-          <div class="direction">
-            <p>4</p>
-            <img src="@/assets/images/Down.png" alt="Down" />
           </div>
         </div>
       </div>
 
-      <div class="topics">
-        <h3>Groups Leaderboard</h3>
-        <div class="user-topics">
-          <div class="leaderboard">
-            <div>
-              <h4 class="header">Houston Facility</h4>
-              <span>52 Points / User - 97% Correct</span>
+      <div class="sect">
+        <div class="topics">
+          <h3>User Leaderboard</h3>
+          <div class="user-topics">
+            <div class="leaderboard">
+              <div>
+                <img src="@/assets/images/Thomas.png" alt="Thomas" />
+              </div>
+              <div>
+                <h4 class="header">Jesse Thomas</h4>
+                <span>637 Points - 98% Correct</span>
+              </div>
+            </div>
+            <div class="direction">
+              <p>1</p>
+              <img src="@/assets/images/up.png" alt="Up" />
             </div>
           </div>
-          <div class="direction">
-            <p>1</p>
-            <img src="@/assets/images/up.png" alt="Up" />
+
+          <div class="user-topics">
+            <div class="leaderboard">
+              <div>
+                <img src="@/assets/images/Thisal.png" alt="Thisal" />
+              </div>
+              <div>
+                <h4 class="header">Thisal Mathiyazhagan</h4>
+                <span>637 Points - 89% Correct</span>
+              </div>
+            </div>
+            <div class="direction">
+              <p>2</p>
+              <img src="@/assets/images/Down.png" alt="Down" />
+            </div>
+          </div>
+
+          <div class="user-topics">
+            <div class="leaderboard">
+              <div>
+                <img src="@/assets/images/Helen.png" alt="Helen" />
+              </div>
+              <div>
+                <h4 class="header">Helen Chuang</h4>
+                <span>637 Points - 88% Correct</span>
+              </div>
+            </div>
+            <div class="direction">
+              <p>3</p>
+              <img src="@/assets/images/up.png" alt="Up" />
+            </div>
+          </div>
+
+          <div class="user-topics">
+            <div class="leaderboard">
+              <div>
+                <img src="@/assets/images/Lura.png" alt="Lura" />
+              </div>
+              <div>
+                <h4 class="header">Lura Silverman</h4>
+                <span>637 Points - 87% Correct</span>
+              </div>
+            </div>
+            <div class="direction">
+              <p>4</p>
+              <img src="@/assets/images/Down.png" alt="Down" />
+            </div>
           </div>
         </div>
 
-        <div class="user-topics">
-          <div class="leaderboard">
-            <div>
-              <h4 class="header">Test Group</h4>
-              <span>52 Points / User - 95% Correct</span>
+        <div class="topics">
+          <h3>Groups Leaderboard</h3>
+          <div class="user-topics">
+            <div class="leaderboard">
+              <div>
+                <h4 class="header">Houston Facility</h4>
+                <span>52 Points / User - 97% Correct</span>
+              </div>
+            </div>
+            <div class="direction">
+              <p>1</p>
+              <img src="@/assets/images/up.png" alt="Up" />
             </div>
           </div>
-          <div class="direction">
-            <p>2</p>
-            <img src="@/assets/images/Down.png" alt="Down" />
-          </div>
-        </div>
 
-        <div class="user-topics">
-          <div class="leaderboard">
-            <div>
-              <h4 class="header">Sales Leadership</h4>
-              <span>52 Points / User - 87% Correct</span>
+          <div class="user-topics">
+            <div class="leaderboard">
+              <div>
+                <h4 class="header">Test Group</h4>
+                <span>52 Points / User - 95% Correct</span>
+              </div>
+            </div>
+            <div class="direction">
+              <p>2</p>
+              <img src="@/assets/images/Down.png" alt="Down" />
             </div>
           </div>
-          <div class="direction">
-            <p>3</p>
-            <img src="@/assets/images/up.png" alt="Up" />
-          </div>
-        </div>
 
-        <div class="user-topics">
-          <div class="leaderboard">
-            <div>
-              <h4 class="header">Northeast Region</h4>
-              <span>52 Points / User - 75% Correct</span>
+          <div class="user-topics">
+            <div class="leaderboard">
+              <div>
+                <h4 class="header">Sales Leadership</h4>
+                <span>52 Points / User - 87% Correct</span>
+              </div>
+            </div>
+            <div class="direction">
+              <p>3</p>
+              <img src="@/assets/images/up.png" alt="Up" />
             </div>
           </div>
-          <div class="direction">
-            <p>4</p>
-            <img src="@/assets/images/Down.png" alt="Down" />
+
+          <div class="user-topics">
+            <div class="leaderboard">
+              <div>
+                <h4 class="header">Northeast Region</h4>
+                <span>52 Points / User - 75% Correct</span>
+              </div>
+            </div>
+            <div class="direction">
+              <p>4</p>
+              <img src="@/assets/images/Down.png" alt="Down" />
+            </div>
           </div>
         </div>
       </div>
@@ -278,6 +287,11 @@ import DropDown from "@/components/DropDown.vue";
   padding: 0.5rem 0;
   position: relative;
 }
+#set-holder {
+  width: 100%;
+  margin-top: 5rem;
+}
+
 .sect {
   width: 100%;
   display: flex;
