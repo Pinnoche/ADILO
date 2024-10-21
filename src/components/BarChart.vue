@@ -77,12 +77,17 @@ onMounted(() => {
 
 <template>
   <div id="bar-chart">
-    <canvas ref="chartCanvas" id="myChart" width="500" height="300"></canvas>
+    <canvas ref="chartCanvas" id="myChart"></canvas>
   </div>
 </template>
 
 <style scoped>
 #bar-chart {
   width: 100%;
+}
+
+#myChart {
+    width: 100%;
+    height: 100%;
 }
 </style>
