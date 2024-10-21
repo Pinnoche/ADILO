@@ -307,13 +307,14 @@ onMounted(() => {
 .sect {
   width: 100%;
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
+  gap: 2%;
   margin: 0.5rem 0;
   cursor: default;
   margin-top: 1.5rem;
 }
 .users {
-  width: 100%;
+  width:  100%;
   font-weight: 500;
   border-radius: 12px;
   display: flex;
@@ -494,7 +495,7 @@ h2 span {
 .weak-progress {
   width: 100%;
   height: 0.55rem;
-  background-color:#ff40802d;
+  background-color: #ff40802d;
   border-radius: 12px;
   padding: 0;
 }
@@ -502,28 +503,28 @@ h2 span {
 #space-74 {
   width: 74%;
   height: 100%;
-  background-color: #FF4080;
+  background-color: #ff4080;
   border-radius: 12px;
 }
 
 #space-52 {
   width: 52%;
   height: 100%;
-  background-color: #FF4080;
+  background-color: #ff4080;
   border-radius: 12px;
 }
 
 #space-36 {
   width: 36%;
   height: 100%;
-  background-color: #FF4080;
+  background-color: #ff4080;
   border-radius: 12px;
 }
 
 .strong-progress {
   width: 100%;
   height: 0.55rem;
-  background-color:#7fdd537b;
+  background-color: #7fdd537b;
   border-radius: 12px;
   padding: 0;
 }
@@ -531,21 +532,21 @@ h2 span {
 #strong-space-95 {
   width: 94%;
   height: 100%;
-  background-color: #2FEA9B;
+  background-color: #2fea9b;
   border-radius: 12px;
 }
 
 #strong-space-92 {
   width: 94%;
   height: 100%;
-  background-color: #2FEA9B;
+  background-color: #2fea9b;
   border-radius: 12px;
 }
 
 #strong-space-89 {
   width: 94%;
   height: 100%;
-  background-color: #2FEA9B;
+  background-color: #2fea9b;
   border-radius: 12px;
 }
 </style>
