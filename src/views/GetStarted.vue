@@ -2,13 +2,13 @@
   <div>
     <div class="header">
       <h3>Welcome to Tesla</h3>
-      <p>Follow these steps to finalize your store setup and selling</p>
+      <p>Follow these steps to setup your account</p>
     </div>
     <div class="container">
       <div class="progress-section">
         <div class="progress-header">
           <p>Let's get you started!</p>
-          <p class="progress-count">2/6</p>
+          <p class="progress-count">2/5</p>
         </div>
         <div class="progress-line">
           <div class="completed-line"></div>
@@ -17,7 +17,7 @@
           <div class="step completed">
             <span class="material-icons checkmark">check_circle</span>
             <div class="step-info">
-              <p class="step-title">Create your store</p>
+              <p class="step-title">Create your Profile</p>
               <p class="step-desc">Provide the required information</p>
             </div>
           </div>
@@ -33,21 +33,13 @@
           <div class="step">
             <span class="material-icons icon">storefront</span>
             <div class="step-info">
-              <p class="step-title">Complete Seller Profile</p>
+              <p class="step-title">Finalize Your Profile</p>
               <p class="step-desc">
-                Complete your seller profile by providing essential information
+                Finalize your profile by providing essential information
               </p>
             </div>
           </div>
-          <div class="step">
-            <span class="material-icons icon">credit_card</span>
-            <div class="step-info">
-              <p class="step-title">Set Up Payment and Shipping</p>
-              <p class="step-desc">
-                Configure your payment settings and shipping preferences
-              </p>
-            </div>
-          </div>
+
           <div class="step">
             <span class="material-icons icon">add_circle</span>
             <div class="step-info">
@@ -60,7 +52,7 @@
           <div class="step">
             <span class="material-icons icon">select_all</span>
             <div class="step-info">
-              <p class="step-title">Promote Your Store</p>
+              <p class="step-title">Promote Your Work</p>
               <p class="step-desc">
                 Utilize promotional tools to increase visibility
               </p>
@@ -86,7 +78,7 @@
   max-width: 700px;
   font-size: 24px;
   font-weight: 600;
-  color: black;
+  color: rgba(204, 21, 21, 0.895);
   margin: 0 auto 5px;
 }
 
@@ -96,9 +88,6 @@
   max-width: 700px;
   margin: 0 auto 25px;
 }
-
-/* .progress-section {
-} */
 
 .progress-header {
   display: flex;
@@ -125,7 +114,7 @@
   margin-bottom: 15px;
 }
 .completed-line {
-  width: 33.3%;
+  width: 40%;
   height: 100%;
   background-color: blue;
 }

@@ -9,7 +9,7 @@ const route = useRoute();
     <div class="nav">
         <h1>{{route.name}}</h1>
         <div>
-            <img src="@/assets/images/Download.png" alt="Download">
+            <img src="@/assets/images/download.png" alt="Download">
             Download
         </div>
     </div>
@@ -28,6 +28,11 @@ const route = useRoute();
     display: flex;
     align-items: center;
     gap: 2px;
+    cursor: pointer;
+}
+
+.nav img {
+    cursor: pointer;
 }
 
 </style>

@@ -37,22 +37,22 @@ onMounted(() => {
             <div>
               <p id="info">
                 Starting Knowledge
-                <img src="@/assets/images/Icon-info.png" alt="Info" />
+                <img src="@/assets/images/icon-info.png" alt="Info" />
               </p>
               <h2>64%</h2>
-              <img src="@/assets/images/Graph.png" alt="Graph" />
+              <img src="@/assets/images/graph.png" alt="Graph" />
             </div>
 
             <div>
               <p>Current Knowledge</p>
               <h2>86%</h2>
-              <img src="@/assets/images/Graph.png" alt="Graph" />
+              <img src="@/assets/images/graph.png" alt="Graph" />
             </div>
 
             <div>
               <p>Knowledge Gain</p>
               <h2>+34%</h2>
-              <img src="@/assets/images/Graph.png" alt="Graph" />
+              <img src="@/assets/images/graph.png" alt="Graph" />
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@ onMounted(() => {
           <div>
             <div class="sub-topics">
               <div>
-                <img src="@/assets/images/Rectangle_1.png" alt="Rectangle_1" />
+                <img src="@/assets/images/rectangle_1.png" alt="Rectangle_1" />
               </div>
               <div class="progress">
                 <h4 class="header">Food Safety</h4>
@@ -88,7 +88,7 @@ onMounted(() => {
             </div>
             <div class="sub-topics">
               <div>
-                <img src="@/assets/images/Rectangle_2.png" alt="Rectangle_2" />
+                <img src="@/assets/images/rectangle_2.png" alt="Rectangle_2" />
               </div>
               <div class="progress">
                 <h4 class="header">Compliance Basics Procedure</h4>
@@ -102,7 +102,7 @@ onMounted(() => {
             </div>
             <div class="sub-topics">
               <div>
-                <img src="@/assets/images/Rectangle_3.png" alt="Rectangle_3" />
+                <img src="@/assets/images/rectangle_3.png" alt="Rectangle_3" />
               </div>
               <div class="progress">
                 <h4 class="header">Company Network</h4>
@@ -122,7 +122,7 @@ onMounted(() => {
           <div>
             <div class="sub-topics">
               <div>
-                <img src="@/assets/images/Rectangle_1.png" alt="Rectangle_1" />
+                <img src="@/assets/images/rectangle_1.png" alt="Rectangle_1" />
               </div>
               <div class="progress">
                 <h4 class="header">Covid Protocols</h4>
@@ -136,7 +136,7 @@ onMounted(() => {
             </div>
             <div class="sub-topics">
               <div>
-                <img src="@/assets/images/Rectangle_2.png" alt="Rectangle_2" />
+                <img src="@/assets/images/rectangle_2.png" alt="Rectangle_2" />
               </div>
               <div class="progress">
                 <h4 class="header">Cyber Security Basics</h4>
@@ -150,7 +150,7 @@ onMounted(() => {
             </div>
             <div class="sub-topics">
               <div>
-                <img src="@/assets/images/Rectangle_3.png" alt="Rectangle_3" />
+                <img src="@/assets/images/rectangle_3.png" alt="Rectangle_3" />
               </div>
               <div class="progress">
                 <h4 class="header">Social Media Policies</h4>
@@ -172,7 +172,7 @@ onMounted(() => {
           <div class="user-topics">
             <div class="leaderboard">
               <div>
-                <img src="@/assets/images/Thomas.png" alt="Thomas" />
+                <img src="@/assets/images/thomas.png" alt="Thomas" />
               </div>
               <div>
                 <h4 class="header">Jesse Thomas</h4>
@@ -188,7 +188,7 @@ onMounted(() => {
           <div class="user-topics">
             <div class="leaderboard">
               <div>
-                <img src="@/assets/images/Thisal.png" alt="Thisal" />
+                <img src="@/assets/images/thisal.png" alt="Thisal" />
               </div>
               <div>
                 <h4 class="header">Thisal Mathiyazhagan</h4>
@@ -197,14 +197,14 @@ onMounted(() => {
             </div>
             <div class="direction">
               <p>2</p>
-              <img src="@/assets/images/Down.png" alt="Down" />
+              <img src="@/assets/images/down.png" alt="Down" />
             </div>
           </div>
 
           <div class="user-topics">
             <div class="leaderboard">
               <div>
-                <img src="@/assets/images/Helen.png" alt="Helen" />
+                <img src="@/assets/images/helen.png" alt="Helen" />
               </div>
               <div>
                 <h4 class="header">Helen Chuang</h4>
@@ -220,7 +220,7 @@ onMounted(() => {
           <div class="user-topics">
             <div class="leaderboard">
               <div>
-                <img src="@/assets/images/Lura.png" alt="Lura" />
+                <img src="@/assets/images/lura.png" alt="Lura" />
               </div>
               <div>
                 <h4 class="header">Lura Silverman</h4>
@@ -229,7 +229,7 @@ onMounted(() => {
             </div>
             <div class="direction">
               <p>4</p>
-              <img src="@/assets/images/Down.png" alt="Down" />
+              <img src="@/assets/images/down.png" alt="Down" />
             </div>
           </div>
         </div>
@@ -258,7 +258,7 @@ onMounted(() => {
             </div>
             <div class="direction">
               <p>2</p>
-              <img src="@/assets/images/Down.png" alt="Down" />
+              <img src="@/assets/images/down.png" alt="Down" />
             </div>
           </div>
 
@@ -284,7 +284,7 @@ onMounted(() => {
             </div>
             <div class="direction">
               <p>4</p>
-              <img src="@/assets/images/Down.png" alt="Down" />
+              <img src="@/assets/images/down.png" alt="Down" />
             </div>
           </div>
         </div>

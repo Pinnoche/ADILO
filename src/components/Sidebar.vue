@@ -1,10 +1,9 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="side-bar">
     <div>
-      <img src="@/assets/images/TESLA.png" alt="TESLA" />
+      <img src="@/assets/images/tesla.png" alt="TESLA" />
     </div>
     <div class="menus">
       <ul>
@@ -16,38 +15,42 @@
         </RouterLink>
         <RouterLink to="/about" exact-active-class="active-link">
           <li>
-            <img src="@/assets/images/Library.png" alt="Flash" />
+            <img src="@/assets/images/library.png" alt="Flash" />
             Library
           </li>
         </RouterLink>
         <RouterLink to="/about" exact-active-class="active-link">
           <li>
-            <img src="@/assets/images/People.png" alt="Flash" />
+            <img src="@/assets/images/people.png" alt="Flash" />
             People
           </li>
         </RouterLink>
         <RouterLink to="/about" exact-active-class="active-link">
           <li>
-            <img src="@/assets/images/Activities.png" alt="Flash" />
+            <img src="@/assets/images/activities.png" alt="Flash" />
             Activities
           </li>
         </RouterLink>
         <p id="support">Support</p>
-        <RouterLink to="/getstarted" exact-active-class="active-link" class="list">
+        <RouterLink
+          to="/getstarted"
+          exact-active-class="active-link"
+          class="list"
+        >
           <li>
-            <img src="@/assets/images/Bulb.png" alt="Flash" />
+            <img src="@/assets/images/bulb.png" alt="Flash" />
             Get Started
           </li>
         </RouterLink>
         <RouterLink to="/about" exact-active-class="active-link" class="list">
           <li>
-            <img src="@/assets/images/Settings.png" alt="Flash" />
+            <img src="@/assets/images/settings.png" alt="Flash" />
             Settings
           </li>
         </RouterLink>
       </ul>
       <div id="profile">
-        <img src="@/assets/images/Profile.png" alt="Profile" />
+        <img src="@/assets/images/profile.png" alt="Profile" />
         <h2>Sam Wheeler</h2>
         <p>ptime552@gmail.com</p>
       </div>
@@ -77,7 +80,7 @@ ul {
 }
 
 li {
-  padding: 14px 2rem; 
+  padding: 14px 2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -93,11 +96,11 @@ li:hover {
 }
 
 .active-link {
-    li {
-        background-color: #1b59f81a;
-        border-radius: 8px;
-        color: #1b59f8;
-    }
+  li {
+    background-color: #1b59f81a;
+    border-radius: 8px;
+    color: #1b59f8;
+  }
 }
 
 #support {
