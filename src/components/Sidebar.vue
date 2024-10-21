@@ -3,7 +3,7 @@
 <template>
   <div class="side-bar">
     <div>
-      <img src="@/assets/images/tesla.png" alt="Tesla" />
+      <img src="@/assets/images/tesla.png" alt="TESLA" />
     </div>
     <div class="menus">
       <ul>
