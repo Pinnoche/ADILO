@@ -22,6 +22,7 @@ const handleTopic = (e: MouseEvent) => {
   isTimeFrame.value = false;
   isTopic.value = !isTopic.value;
 };
+
 </script>
 <template>
   <div class="dropdown-section">

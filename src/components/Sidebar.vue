@@ -8,36 +8,38 @@
     </div>
     <div class="menus">
       <ul>
-        <RouterLink to="/">
+        <RouterLink to="/" exact-active-class="active-link">
           <li>
             <img src="@/assets/images/flash.png" alt="Flash" />
             Reports
           </li>
         </RouterLink>
-        <RouterLink to="/">
+        <RouterLink to="/about" exact-active-class="active-link">
           <li>
             <img src="@/assets/images/Library.png" alt="Flash" />
             Library
           </li>
         </RouterLink>
-        <li>
-          <img src="@/assets/images/People.png" alt="Flash" />
-          People
-        </li>
-        <RouterLink to="/">
+        <RouterLink to="/about" exact-active-class="active-link">
+          <li>
+            <img src="@/assets/images/People.png" alt="Flash" />
+            People
+          </li>
+        </RouterLink>
+        <RouterLink to="/about" exact-active-class="active-link">
           <li>
             <img src="@/assets/images/Activities.png" alt="Flash" />
             Activities
           </li>
         </RouterLink>
         <p id="support">Support</p>
-        <RouterLink to="/getstarted">
+        <RouterLink to="/getstarted" exact-active-class="active-link" class="list">
           <li>
             <img src="@/assets/images/Bulb.png" alt="Flash" />
             Get Started
           </li>
         </RouterLink>
-        <RouterLink to="/">
+        <RouterLink to="/about" exact-active-class="active-link" class="list">
           <li>
             <img src="@/assets/images/Settings.png" alt="Flash" />
             Settings
@@ -75,7 +77,7 @@ ul {
 }
 
 li {
-  padding: 14px 2rem;
+  padding: 14px 2rem; 
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -84,9 +86,18 @@ li {
 
 li:hover {
   background-color: #1b59f81a;
+  margin: 2px 0;
   border-radius: 8px;
   cursor: pointer;
   color: #1b59f8;
+}
+
+.active-link {
+    li {
+        background-color: #1b59f81a;
+        border-radius: 8px;
+        color: #1b59f8;
+    }
 }
 
 #support {

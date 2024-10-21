@@ -2,11 +2,11 @@
 import { Chart, type ChartItem } from "chart.js/auto";
 import { ref, onMounted } from "vue";
 
-const chartCanvas = ref<HTMLCanvasElement | null>(null); // Using ref for the canvas element
+const chartCanvas = ref<HTMLCanvasElement | null>(null); 
 
 onMounted(() => {
   if (chartCanvas.value) {
-    const ctx = chartCanvas.value.getContext("2d") as ChartItem; // Get the 2D rendering context
+    const ctx = chartCanvas.value.getContext("2d") as ChartItem; 
 
     new Chart(ctx, {
       type: "bar",
@@ -32,23 +32,23 @@ onMounted(() => {
             borderWidth: 0,
             borderRadius: 32,
             backgroundColor: "#1B59F8CC",
-            barThickness: 10, // Adjust the bar thickness (in pixels)
+            barThickness: 10,
             maxBarThickness: 50,
           },
         ],
       },
       options: {
         animation: {
-          duration: 1500, // Duration of the filling up animation
+          duration: 1500, 
           easing: "easeInQuad",
         },
         scales: {
           x: {
             grid: {
-              display: false, // Disable grid lines on the x-axis
+              display: false, 
             },
             border: {
-              display: false, // Remove the x-axis line
+              display: false,
             },
           },
           y: {
@@ -57,10 +57,10 @@ onMounted(() => {
               stepSize: 100,
             },
             grid: {
-              display: false, // Disable grid lines on the y-axis
+              display: false,
             },
             border: {
-              display: false, // Remove the y-axis line
+              display: false,
             },
           },
         },
@@ -78,7 +78,6 @@ onMounted(() => {
 <template>
   <div id="bar-chart">
     <canvas ref="chartCanvas" id="myChart" width="500" height="300"></canvas>
-    <!-- Using the ref here -->
   </div>
 </template>
 

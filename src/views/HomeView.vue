@@ -76,9 +76,11 @@ onMounted(() => {
               <div>
                 <img src="@/assets/images/Rectangle_1.png" alt="Rectangle_1" />
               </div>
-              <div>
+              <div class="progress">
                 <h4 class="header">Food Safety</h4>
-                <img src="@/assets/images/Progress_1.png" alt="Progress_1" />
+                <div class="weak-progress">
+                  <div id="space-74"></div>
+                </div>
               </div>
               <div class="percent">
                 <p>74% <span>Correct</span></p>
@@ -88,9 +90,11 @@ onMounted(() => {
               <div>
                 <img src="@/assets/images/Rectangle_2.png" alt="Rectangle_2" />
               </div>
-              <div>
+              <div class="progress">
                 <h4 class="header">Compliance Basics Procedure</h4>
-                <img src="@/assets/images/Progress_2.png" alt="Progress_2" />
+                <div class="weak-progress">
+                  <div id="space-52"></div>
+                </div>
               </div>
               <div class="percent">
                 <p>52% <span>Correct</span></p>
@@ -100,9 +104,11 @@ onMounted(() => {
               <div>
                 <img src="@/assets/images/Rectangle_3.png" alt="Rectangle_3" />
               </div>
-              <div>
+              <div class="progress">
                 <h4 class="header">Company Network</h4>
-                <img src="@/assets/images/Progress_3.png" alt="Progress_3" />
+                <div class="weak-progress">
+                  <div id="space-36"></div>
+                </div>
               </div>
               <div class="percent">
                 <p>36% <span>Correct</span></p>
@@ -118,21 +124,25 @@ onMounted(() => {
               <div>
                 <img src="@/assets/images/Rectangle_1.png" alt="Rectangle_1" />
               </div>
-              <div>
+              <div class="progress">
                 <h4 class="header">Covid Protocols</h4>
-                <img src="@/assets/images/Progress_4.png" alt="Progress_4" />
+                <div class="strong-progress">
+                  <div id="strong-space-95"></div>
+                </div>
               </div>
               <div class="percent">
-                <p>94% <span>Correct</span></p>
+                <p>95% <span>Correct</span></p>
               </div>
             </div>
             <div class="sub-topics">
               <div>
                 <img src="@/assets/images/Rectangle_2.png" alt="Rectangle_2" />
               </div>
-              <div>
+              <div class="progress">
                 <h4 class="header">Cyber Security Basics</h4>
-                <img src="@/assets/images/Progress_4.png" alt="Progress_4" />
+                <div class="strong-progress">
+                  <div id="strong-space-92"></div>
+                </div>
               </div>
               <div class="percent">
                 <p>92% <span>Correct</span></p>
@@ -142,9 +152,11 @@ onMounted(() => {
               <div>
                 <img src="@/assets/images/Rectangle_3.png" alt="Rectangle_3" />
               </div>
-              <div>
+              <div class="progress">
                 <h4 class="header">Social Media Policies</h4>
-                <img src="@/assets/images/Progress_4.png" alt="Progress_4" />
+                <div class="strong-progress">
+                  <div id="strong-space-89"></div>
+                </div>
               </div>
               <div class="percent">
                 <p>89% <span>Correct</span></p>
@@ -350,6 +362,8 @@ onMounted(() => {
 }
 
 .user {
+  width: 100%;
+  height: 48%;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -357,6 +371,8 @@ onMounted(() => {
 }
 
 .user-2 {
+  width: 100%;
+  height: 48%;
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
@@ -365,8 +381,7 @@ onMounted(() => {
 
 .user div {
   background-color: white;
-  width: 100%;
-  height: 100%;
+  width: 32%;
   border-radius: 1.25rem;
   padding: 1.5rem 1rem 4.5rem 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -374,8 +389,7 @@ onMounted(() => {
 
 .user-2 div {
   background-color: white;
-  width: 100%;
-  height: 100%;
+  width: 32%;
   border-radius: 1.25rem;
   padding: 1.5rem 1rem 2.5rem 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -471,5 +485,67 @@ h2 span {
 .direction p {
   margin: 0;
   font-weight: 600;
+}
+
+.progress {
+  width: 44%;
+}
+
+.weak-progress {
+  width: 100%;
+  height: 0.55rem;
+  background-color:#ff40802d;
+  border-radius: 12px;
+  padding: 0;
+}
+
+#space-74 {
+  width: 74%;
+  height: 100%;
+  background-color: #FF4080;
+  border-radius: 12px;
+}
+
+#space-52 {
+  width: 52%;
+  height: 100%;
+  background-color: #FF4080;
+  border-radius: 12px;
+}
+
+#space-36 {
+  width: 36%;
+  height: 100%;
+  background-color: #FF4080;
+  border-radius: 12px;
+}
+
+.strong-progress {
+  width: 100%;
+  height: 0.55rem;
+  background-color:#7fdd537b;
+  border-radius: 12px;
+  padding: 0;
+}
+
+#strong-space-95 {
+  width: 94%;
+  height: 100%;
+  background-color: #2FEA9B;
+  border-radius: 12px;
+}
+
+#strong-space-92 {
+  width: 94%;
+  height: 100%;
+  background-color: #2FEA9B;
+  border-radius: 12px;
+}
+
+#strong-space-89 {
+  width: 94%;
+  height: 100%;
+  background-color: #2FEA9B;
+  border-radius: 12px;
 }
 </style>
